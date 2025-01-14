@@ -13,10 +13,9 @@ body {
     flex: 1;
 }
 
-#footer-container {
+#footer-container{
     margin-top: auto;
 }
-
 .logo-container {
     text-align: center;
 
