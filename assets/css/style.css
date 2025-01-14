@@ -1,0 +1,47 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content {
+    flex: 1;
+}
+
+#footer-container {
+    margin-top: auto;
+}
+
+.logo-container {
+    text-align: center;
+
+}
+
+.img-fluid {
+    max-width: 50%;
+    height: auto;
+}
+
+.box {
+    border: 2px solid #c7d3d072;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    padding: 25px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.input-group {
+    padding: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
