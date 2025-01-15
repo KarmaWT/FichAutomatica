@@ -18,11 +18,19 @@
                         Fichas
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">Criar fichas</a></li>
-                        <li><a class="dropdown-item" href="#">Minhas fichas</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="/src/views/criar_ficha.html">Criar fichas</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#DropOrdemParanormal">Ordem</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#DropDungeons&Dragons">D&D</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="/src/views/minhas_fichas.html">Minhas fichas</a></li>
                     </ul>
                 </li>
+
                 <!-- Navbar - Sobre o Site -->
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/src/views/sobre.html">Sobre o site</a>
@@ -36,8 +44,10 @@
     </div>
 </nav>
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+<!-- Modals de criação de Ficha -->
+
+<!-- Modal Ordem Paranormal-->
+<div class="modal fade" id="DropOrdemParanormal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -47,7 +57,184 @@
             </div>
             <div class="modal-body">
                 <form action="#" method="get">
-                    <h1 class="text-center" style="color: #049a8f; padding-bottom: 25px;">Personagem</h1>
+                    <!-- Ordem Paranormal Logo -->
+                    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
+                        <img src="/assets/img/Ordem-Paranormal.png" alt="Ordem-Paranormal Logo"
+                            style=" width: 25rem; height: 10rem; padding-bottom: 25px;">
+                    </div>
+
+                    <!-- Input Nome -->
+                    <div class=" input-group">
+                        <span class="input-group-text" id="input-nome-personagem">Nome</span>
+                        <input type="text" class="form-control" placeholder="Nome do Personagem"
+                            aria-label="Nome do Personagem" aria-describedby="addon-wrapping" required>
+                    </div>
+
+                    <!-- Input Idade -->
+                    <div class="input-group">
+                        <span class="input-group-text" id="input-idade-personagem">Idade</span>
+                        <input type="text" class="form-control" placeholder="Idade do Personagem"
+                            aria-label="Idade do Personagem" aria-describedby="addon-wrapping">
+                    </div>
+
+                    <!-- Input Aparencia -->
+                    <div class="input-group">
+                        <span class="input-group-text" id="input-Aparencia-personagem">Aparencia</span>
+                        <input type="text" class="form-control" placeholder="Aparencia do Personagem"
+                            aria-label="Aparencia do Personagem" aria-describedby="addon-wrapping">
+                    </div>
+
+
+                    <!-- Input Origens -->
+                    <div class="input-group">
+                        <label class="input-group-text" for="inputGroupOrigens">Origens</label>
+                        <select class="form-select" id="inputGroupOrigens">
+                            <!-- Origens Principais -->
+                            <optgroup label="Origens Principais">
+                                <option selected>Nenhuma</option>
+                                <option value="2">Acadêmico</option>
+                                <option value="1">Agente de saúde</option>
+                                <option value="3">Amnésico</option>
+                                <option value="4">Artista</option>
+                                <option value="5">Atleta</option>
+                                <option value="6">Chef</option>
+                                <option value="7">Criminoso</option>
+                                <option value="8">Cultista arrependido</option>
+                                <option value="9">Desgarrado</option>
+                                <option value="10">Engenheiro</option>
+                                <option value="11">Executivo</option>
+                                <option value="12">Investigador</option>
+                                <option value="13">Lutador</option>
+                                <option value="14">Magnata</option>
+                                <option value="15">Mercenário</option>
+                                <option value="16">Militar</option>
+                                <option value="17">Operário</option>
+                                <option value="18">Policial</option>
+                                <option value="19">Religioso</option>
+                                <option value="20">Servidor público</option>
+                                <option value="21">Técnico da conspiração</option>
+                                <option value="22">T.I.</option>
+                                <option value="23">Trabalhador rural</option>
+                                <option value="24">Trambiqueiro</option>
+                                <option value="25">Universitário</option>
+                                <option value="26">Vítima</option>
+                            </optgroup>
+                            <!-- Origens de Sobrevivendo ao Horror -->
+                            <optgroup label="Sobrevivendo Ao Horror">
+                                <option value="27">Amigos dos animais</option>
+                                <option value="28">Astronauta</option>
+                                <option value="29">Chef do outro lado</option>
+                                <option value="30">Colegial</option>
+                                <option value="31">Cosplayer</option>
+                                <option value="32">Diplomata</option>
+                                <option value="33">Explorador</option>
+                                <option value="34">Experimento</option>
+                                <option value="35">Fanático por criaturas</option>
+                                <option value="36">Fotógrafo</option>
+                                <option value="37">Inventor paranormal</option>
+                                <option value="38">Jovem místico</option>
+                                <option value="39">Legista do turno da noite</option>
+                                <option value="40">Mateiro</option>
+                                <option value="41">Mergulhador</option>
+                                <option value="42">Motorista</option>
+                                <option value="43">Nerd entusiasta</option>
+                                <option value="44">Psicólogo</option>
+                                <option value="45">Profetizado</option>
+                                <option value="46">Repórter investigativo</option>
+                            </optgroup>
+
+                        </select>
+                    </div>
+
+                    <!-- Input Classe -->
+                    <div class="input-group">
+                        <label class="input-group-text" for="inputGroupClasse">Classe</label>
+                        <select class="form-select" id="inputGroupClasse">
+                            <!-- Classe -->
+                            <optgroup label="Classe">
+                                <option selected>Nenhuma</option>
+                                <option value="1">Combatente</option>
+                                <option value="2">Especislista</option>
+                                <option value="3">Ocultista</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <!-- Input NEX -->
+                    <div class="input-group">
+                        <label class="input-group-text" for="inputGroupNEX">NEX</label>
+                        <select class="form-select" id="inputGroupNEX">
+                            <!-- Classe -->
+                            <optgroup label="NEX">
+                                <option selected>0%</option>
+                                <option value="1">5%</option>
+                                <option value="2">10%</option>
+                                <option value="3">15%</option>
+                                <option value="4">20%</option>
+                                <option value="5">25%</option>
+                                <option value="6">30%</option>
+                                <option value="7">35%</option>
+                                <option value="8">40%</option>
+                                <option value="9">45%</option>
+                                <option value="10">50%</option>
+                                <option value="11">55%</option>
+                                <option value="12">60%</option>
+                                <option value="13">65%</option>
+                                <option value="14">70%</option>
+                                <option value="15">75%</option>
+                                <option value="16">80%</option>
+                                <option value="17">85%</option>
+                                <option value="18">90%</option>
+                                <option value="19">95%</option>
+                                <option value="20">100%</option>
+
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <!-- Input Foto -->
+                    <div class="input-group">
+                        <label class="input-group-text" for="inputGroupFoto">Foto</label>
+                        <input type="file" class="form-control" id="inputGroupFoto">
+                    </div>
+
+                    <!-- Área de visualização da foto -->
+                    <div id="previewContainer" class="text-center"
+                        style="border: 2px dashed #ccc; padding: 10px; width: 200px; height: 200px;">
+                        <img id="previewImage" src="" alt="Pré-visualização da Foto"
+                            style="max-width: 100%; max-height: 100%; display: none;">
+                        <span id="noImageText" style="display: block; color: #888;">Nenhuma imagem selecionada</span>
+                    </div>
+                </form>
+
+                <!-- Botões da Modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Criar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ordem Paranormal-->
+<div class="modal fade" id="DropDungeons&Dragons" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Nova ficha</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="get">
+                    <!-- Dungeosn & Dragons Logo -->
+                    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
+                        <img src="/assets/img/Dungeons&Dragons.png" alt="Dungeons&Dragons Logo"
+                            style=" width: 25rem; height: 10rem; padding-bottom: 25px;">
+                    </div>
 
                     <!-- Input Nome -->
                     <div class="input-group mb-2">

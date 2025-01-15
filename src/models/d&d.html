@@ -1,0 +1,82 @@
+<!-- Dungeosn & Dragons Logo -->
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
+    <img src="/assets/img/Dungeons&Dragons.png" alt="Dungeons&Dragons Logo"
+        style=" width: 25rem; height: 10rem; padding-bottom: 25px;">
+</div>
+
+<!-- Input Nome -->
+<div class="input-group mb-2">
+    <span class="input-group-text" id="input-nome-personagem">Nome</span>
+    <input type="text" class="form-control" placeholder="Nome do Personagem" aria-label="Nome do Personagem"
+        aria-describedby="addon-wrapping" required>
+</div>
+
+<!-- Input Raça -->
+<div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupRaça">Raça</label>
+    <select class="form-select" id="inputGroupRaça">
+        <!-- Raças Principais -->
+        <optgroup label="Raças principais">
+            <option selected>Humano(Human)</option>
+            <option value="1">Anão(Dwarves)</option>
+            <option value="2">Elfo(Elf)</option>
+            <option value="3">Vampiro(Vampire)</option>
+            <option value="4">Halfling</option>
+            <option value="5">Gnomo(Gnome)</option>
+            <option value="6">Meio-Elfo(Helf-Elg)</option>
+            <option value="7">Meio-Orc(Half-Orc)</option>
+            <option value="8">Tiefling</option>
+        </optgroup>
+        <!-- Raças Adicionais -->
+        <optgroup label="Raças adicionais">
+            <option value="9">Dragonborn</option>
+            <option value="10">Tabaxi</option>
+            <option value="11">Aarakocra</option>
+            <option value="12">Firbolgs</option>
+            <option value="13">Genasi</option>
+            <option value="14">Kenku</option>
+            <option value="15">Tritões</option>
+            <option value="16">Lizardfolk</option>
+            <option value="17">Shifter</option>
+            <option value="18">Yuan-ti</option>
+        </optgroup>
+    </select>
+</div>
+
+<!-- Input Classe -->
+<div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupClasse">Classe</label>
+    <select class="form-select" id="inputGroupClasse">
+        <!-- Classes Principais -->
+        <optgroup label="Classes principais">
+            <option selected>Nenhuma</option>
+            <option value="1">Bárbaro(Barbarian)</option>
+            <option value="2">Bardo(Bard)</option>
+            <option value="3">Clérigo(Cleric)</option>
+            <option value="4">Druida(Druid)</option>
+            <option value="5">Guerreiro(Fighter)</option>
+            <option value="6">Ladrão(Rogue)</option>
+            <option value="7">Mago(Wizard)</option>
+            <option value="8">Monge(Monk)</option>
+            <option value="9">Paladino(Paladin)</option>
+            <option value="10">Feiticeiro(Sorcerer)</option>
+            <option value="11">Arqueiro(Ranger)</option>
+        </optgroup>
+    </select>
+</div>
+
+<!-- Input Foto -->
+<div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupFoto">Foto</label>
+    <input type="file" class="form-control" id="inputGroupFoto">
+</div>
+
+<!-- Área de visualização da foto -->
+<div id="previewContainer" class="text-center"
+    style="border: 2px dashed #ccc; padding: 10px; width: 200px; height: 200px;">
+    <img id="previewImage" src="" alt="Pré-visualização da Foto"
+        style="max-width: 100%; max-height: 100%; display: none;">
+    <span id="noImageText" style="display: block; color: #888;">Nenhuma imagem selecionada</span>
+</div>
+</form>

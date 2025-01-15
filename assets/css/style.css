@@ -13,9 +13,10 @@ body {
     flex: 1;
 }
 
-#footer-container{
+#footer-container {
     margin-top: auto;
 }
+
 .logo-container {
     text-align: center;
 
@@ -26,6 +27,7 @@ body {
     height: auto;
 }
 
+/* Box do Login */
 .box {
     border: 2px solid #c7d3d072;
     border-radius: 8px;
@@ -44,3 +46,20 @@ body {
 .text-center {
     text-align: center;
 }
+
+/* Dropdown Submenu - Navbar */
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    left: 100%;   
+    top: 0;
+    display: none; 
+    z-index: 1050; 
+  }
+  
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block; 
+  }
+  
