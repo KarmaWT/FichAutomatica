@@ -50,16 +50,15 @@ body {
 /* Dropdown Submenu - Navbar */
 .dropdown-submenu {
     position: relative;
-  }
-  
-  .dropdown-submenu .dropdown-menu {
-    left: 100%;   
+}
+
+.dropdown-submenu .dropdown-menu {
+    left: 100%;
     top: 0;
-    display: none; 
-    z-index: 1050; 
-  }
-  
-  .dropdown-submenu:hover .dropdown-menu {
-    display: block; 
-  }
-  
+    display: none;
+    z-index: 1050;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
