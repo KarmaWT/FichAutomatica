@@ -1,0 +1,63 @@
+FichAutomatica
+│   README.md
+│   
+│
+├───assets
+│   ├───css
+│   │       style.css
+│   │
+│   ├───fonts
+│   ├───img
+│   │       Dungeons&Dragons.png
+│   │       icon-alvo.svg
+│   │       icon-cadeado.svg
+│   │       icon-chave.svg
+│   │       icon-coroa.svg
+│   │       icon-cursor.svg
+│   │       icon-download.svg
+│   │       icon-email.svg
+│   │       icon-engrenagem.svg
+│   │       icon-export.svg
+│   │       icon-navegador.svg
+│   │       icon-nome-personagem.svg
+│   │       icon-sword.svg
+│   │       logo-FichAutomatica.svg
+│   │       loog-FichAutomatica2.svg
+│   │       Ordem-Paranormal.png
+│   │
+│   ├───js
+│   │       footer.js
+│   │       main.js
+│   │       navbar.js
+│   │
+│   └───vendor
+│           Dependencias.txt
+│
+├───database
+│       bdd.sql
+│
+├───docs
+│   │   aaaa.txt
+│   │   Anotações.txt
+│   │   Estrutura das pastas.txt
+│   │
+│   └───diagrams
+│           diagrama.png
+│
+└───src
+    │   index.html
+    │
+    ├───controllers
+    ├───models
+    │       d&d.html
+    │       ordem.html
+    │
+    └───views
+            criar_ficha.html
+            criar_ficha_ordem.html
+            footer.html
+            login.html
+            minhas_fichas.html
+            navbar.html
+            sistemas.html
+            sobre.html

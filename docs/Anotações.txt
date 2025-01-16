@@ -1,0 +1,2 @@
+16/01/2025 ─ Alteração na tela de criação de fichas: agora há a adição de uma nova interface com dois botões, 
+sendo um para fichas de Ordem Paranormal e outro para fichas de Dungeons & Dragons.

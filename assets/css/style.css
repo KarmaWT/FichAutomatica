@@ -43,10 +43,6 @@ body {
     padding: 15px;
 }
 
-.text-center {
-    text-align: center;
-}
-
 /* Dropdown Submenu - Navbar */
 .dropdown-submenu {
     position: relative;
@@ -61,4 +57,80 @@ body {
 
 .dropdown-submenu:hover .dropdown-menu {
     display: block;
+}
+
+
+
+/* Impede as Box de tipo Number de ficar com cetas ao lado */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Botão ─ Ordem */
+.btn-ordem {
+    color: #000000;
+    font-size: 35px;
+    background-color: rgb(1, 1, 0);
+    border: 3px solid rgb(233, 211, 71);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+    transform: translateY(20px);
+    animation: surgir 1s ease-out forwards;
+}
+
+/* Animação ao passar o mouse encima */
+.btn-ordem:hover {
+    background-color: rgb(48, 48, 46);
+    cursor: pointer;
+}
+
+/* Botão ─ Dungeons */
+.btn-dungeon {
+    color: #000000;
+    font-size: 35px;
+    background-color: rgb(241, 241, 241);
+    border: 3px solid rgb(188, 0, 0);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+    transform: translateY(20px);
+    animation: surgir 1s ease-out forwards;
+}
+
+/* Animação ao passar o mouse encima */
+.btn-dungeon:hover {
+    background-color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+
+
+/* Animação de entrada do botão ao carregar a tela */
+@keyframes surgir {
+    0% {
+        opacity: 0.3;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
